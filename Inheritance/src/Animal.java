@@ -1,5 +1,5 @@
 public class Animal {
-    private String type;
+    protected String type; // protected all access for subclasses
     private String size;
     private double weight;
     public Animal(String type, String size, double weight) {
@@ -21,7 +21,7 @@ public class Animal {
         System.out.println(type + " moves " + speed);
     }
 
-    public void makeNoice(){
+    public void makeNoise(){
         System.out.println(type + " makes some type of noise.");
     }
 }
