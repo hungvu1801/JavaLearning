@@ -1,8 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        Burger burger = new Burger("Burger Chicken", "small", "Onions", "Chillis", "Cheese");
-        DeluxBurger deluxBurger = new DeluxBurger("Burger Chicken", "large", "Cheese", "Cheese", "Cheese", "Chillis", "Cheese");
-        System.out.println(deluxBurger.getPrize());
+        Meal normalMeal = new Meal();
+        normalMeal.printBill();
+        // normalMeal.setBurgerSize("large");
+        // normalMeal.setBurgerType("Burger Extra Large Cheese");
+        // normalMeal.setDrinkSize("large");
+        // normalMeal.setDrinkType("Pepsi");
+        // normalMeal.setToppingsBurger();
+        // normalMeal.printBill();
 
+        DeluxMeal deluxMeal = new DeluxMeal();
+        deluxMeal.printBill();
+        deluxMeal.setBurgerSize("large");
+        deluxMeal.printBill();
+        deluxMeal.setToppingsBurger();
+        deluxMeal.printBill();
     }
 }
