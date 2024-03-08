@@ -39,6 +39,15 @@ public class Main {
         if (Arrays.binarySearch(sArray, "Mark") >= 0) {
             System.out.println("Mark's found.");
         } 
+        
+        // Comparing two arrays
+        int[] s1 = {1, 2, 3, 4, 5};
+        int[] s2 = {1, 2, 3, 4, 5};
+        if (Arrays.equals(s1, s2)) {
+            System.out.println("Arrays are equal");
+        } else {
+            System.out.println("Arrays are not equal");
+        }
     }
 
     private static int[] getRandomArray (int len) {
